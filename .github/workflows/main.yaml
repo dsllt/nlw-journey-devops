@@ -18,6 +18,9 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: '1.22.x'
+
+      - name: Install kubectl
+        run: brew install kubectl
       
       - name: Run tests
         run: go test
