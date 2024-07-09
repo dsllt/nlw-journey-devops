@@ -31,6 +31,6 @@ jobs:
 
       - name: Push docker image
         run: |
-        docker push dsllt/nlw-journey-devops:${{ steps.generate_sha.outputs.sha }} .
-        docker tag dsllt/nlw-journey-devops:${{ steps.generate_sha.outputs.sha }} dsllt/nlw-journey-devops:latest
-        docker push dsllt/nlw-journey-devops:latest
+          docker push dsllt/nlw-journey-devops:${{ steps.generate_sha.outputs.sha }} .
+          docker tag dsllt/nlw-journey-devops:${{ steps.generate_sha.outputs.sha }} dsllt/nlw-journey-devops:latest
+          docker push dsllt/nlw-journey-devops:latest
